@@ -24,8 +24,11 @@ function Hero(props) {
   const img = maybeImage(props.illustration);
   return (
     <div className="container px-3 mx-auto flex flex-wrap flex-col md:flex-row items-center">
+      {/* Right col */}
+      <div className="w-full md:w-4/5 py-6 text-center">{img}</div>
+
       {/* Left col */}
-      <div className="flex flex-col w-full md:w-2/5 justify-center items-start text-center md:text-left">
+      <div className="flex flex-col w-full md:w-1/5 justify-center items-start text-center md:text-left">
         <p className="uppercase tracking-loose w-full">{props.label}</p>
         <h1 className="my-4 text-5xl font-bold leading-tight">{props.heading}</h1>
         <div className="leading-normal text-2xl mb-8">
@@ -38,8 +41,6 @@ function Hero(props) {
           />
         )}
       </div>
-      {/* Right col */}
-      <div className="w-full md:w-3/5 py-6 text-center">{img}</div>
     </div>
   );
 }

@@ -9,7 +9,7 @@ export default {
     },
     {
       name: 'heading',
-      type: 'string',
+      type: 'localeString',
       title: 'Heading'
     },
     {
